@@ -7,6 +7,7 @@ import org.apache.camel.impl.DefaultCamelContext;
 public class FileCopy {
 	public static void main(String[] args) throws Exception {
 
+		@SuppressWarnings("resource")
 		CamelContext context = new DefaultCamelContext();
 		context.addRoutes(new RouteBuilder() {
 
